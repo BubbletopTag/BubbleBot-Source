@@ -1,0 +1,26 @@
+const Discord = require('discord.js')
+const client = new Discord.Client()
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`)
+})
+
+client.on('message', msg => {
+  if (msg.content === '/ping') {
+    msg.reply('Pong!')
+ 
+}
+client.on('message', message => {
+	if (message.content === '/fruits') {
+		message.react('🍎')
+			.then(() => message.react('🍊'))
+			.then(() => message.react('🍇'))
+			.catch(() => console.error('One of the emojis failed to react.'));
+	}
+});
+ if (msg.content === '/cat') {
+        msg.reply('Meow', {files:       ['https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/220px-Cat03.jpg']})
+ }
+})
+
+client.login('NjEyMzM3MTQ1MTQ3MDMxNTUz.XVrwHQ.heRE0gSRa0ns39qMoc9kEnBvuHg')
