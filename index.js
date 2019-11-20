@@ -845,4 +845,4 @@ client.on("message", msg => {
   }
 });
 
-client.login("NjEyMzM3MTQ1MTQ3MDMxNTUz.XZ51PQ.RSupV2StxESeac-XqV8eN6MGhBo");
+client.login("super-secret");
